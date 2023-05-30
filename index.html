@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <label>Number of Slider</label>
+    <input type="text" id="numberSlide" placeholder="0, 1, 2,...">
+    <button id="submit" onclick="onSubmit()">Submit</button>
+    
+    <div class="slider" onmouseover="mouseoverSlider()" onmouseout="autoSliding()">
+      <button class="btn-pre-next slider-pre">Pre</button>
+      <ul class="slider-dots">
+      </ul>
+
+      <div class="slider-wrapper">
+        <div class="slider-main">
+        </div>
+      </div>
+
+      <button class="btn-pre-next slider-next">Next</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
